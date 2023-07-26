@@ -1,7 +1,7 @@
 -name: install nginx
- host: web
+ hosts: web
  tasks:
    -name: install nginx
-     ansible.builtin.yum:
-       name: httpd
-       state: latest
+    ansible.builtin.yum:
+      name: httpd
+      state: latest
