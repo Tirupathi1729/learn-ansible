@@ -6,3 +6,9 @@
       ansible.builtin.yum:
         name: httpd
         state: latest
+
+    - name: start nginx
+      ansible.builtin.systemd:
+        name: nginx
+        state: started
+        enabled: yes
