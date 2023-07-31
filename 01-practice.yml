@@ -1,0 +1,13 @@
+- name: "write a playbook"
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: "installing a zlib package"
+      ansible.builtin.yum:
+        name: zlib
+        state: installed
+
+    - name: create the directory
+      ansible.builtin.file:
+        path: "/tmp/some_file"
+        state: touch
