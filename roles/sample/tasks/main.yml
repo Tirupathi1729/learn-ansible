@@ -1,13 +1,3 @@
-#- name: Install nginx
-#  ansible.builtin.yum:
-#    name: nginx
-#    state: latest
-#
-#- name: start nginx
-#  ansible.builtin.systemd:
-#    name: nginx
-#    state: started
-#    enabled: yes
 
 - name: print variable
   ansible.builtin.debug:
