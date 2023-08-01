@@ -2,15 +2,15 @@
   hosts: localhost
   connection: local
   vars:
-    URL: play.google.com
+    URL: play.google.com   #play level declaration   all the tasks access the play level variables
   tasks:
     - name: print variable
       ansible.builtin.debug:
-        msg: URL = {{ URL }}
+        msg: URL = {{ URL }}           # task variables
 
     - name: print task variables
       ansible.builtin.debug:
         msg: URL = {{ URL }}
       vars:
-        URL: tasks.google.com
+        URL: tasks.google.com #local variables have high priority
 
