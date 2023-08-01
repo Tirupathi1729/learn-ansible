@@ -1,8 +1,8 @@
 - name: Variable
   hosts: localhost
   connection: local
-  vars:
-    URL: play.google.com   #play level declaration   all the tasks access the play level variables
+  #vars:
+   # URL: play.google.com   #play level declaration   all the tasks access the play level variables
 
   roles:
     - sample
